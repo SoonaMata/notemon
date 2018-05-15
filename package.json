@@ -1,0 +1,9 @@
+{
+  "name": "notemon",
+  "description": "a SPACE for your notes!",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.16.0"
+  }
+}
