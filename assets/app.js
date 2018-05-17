@@ -9,7 +9,11 @@
          * On click, create a new note and redirect to it...
          */
         createNoteAndRedirect: evt => {
-            axios.post('/api/notes').then(response => (window.location = '/notes/'+response.data.data.Slug))
+            axios.post('/api/notes')
+                .then(response => (window.location = '/notes/'+response.data.data.Slug))
+                .catch( e => {
+                    console.error('[ERROR] app.js > createNoteAndRedirect : ', e);
+                })
         },
 
         /**
@@ -28,7 +32,9 @@
                         )
                     }
                 }
-            })
+            }).catch( e => {
+                console.error('[ERROR] app.js > loadNotes : ', e);
+            });
         }
     }
 
