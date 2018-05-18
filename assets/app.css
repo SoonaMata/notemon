@@ -1,3 +1,20 @@
+.dot {
+    height: 155px;
+    width: 155px;
+    background-color: transparent;
+    border-radius: 90%;
+    border-color: pink;
+    border-style:  ridge;
+    display: inline-block;
+}
+
+#create-button {
+    color: pink;
+    border-style: solid;
+    border-width: 50%;
+    border-color: orange;
+    position: center;
+}
  .navbar .navbar-brand {
     margin: 0;
 }

@@ -18,7 +18,7 @@
     </nav>
 
     <div class="container text-editor">
-        <div id="editor"></div>
+        <div id="editor"></div> 
     </div>
 
     <footer class="footer">
@@ -30,7 +30,18 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/combine/npm/jquery@3.2.1,npm/axios@0.17.0/dist/axios.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/pusher/deliverfoo/us1/textsync.js"></script>
 
-    <script type="text/javascript" src="https://static.pusherplatform.com/textsync/us1/textsync.js"></script>
+    <script type="text/javascript" src="https://static.pusherplatform.com/textsync/us1/textsync.js"></script> 
+    <script type="text/javascript">
+      const textSyncInstance = new TextSync({
+        instanceLocator: "v1:us1:54bea3be-ee28-4ea6-bf22-ab2c4c4a5b46",
+      });
+
+      textSyncInstance.createEditor({
+        docId: "my-first-document",
+        element: "#editor",
+        authEndpoint: "https://calm-fortress-94261.herokuapp.com/textsync/tokens",
+      });
+    </script> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <!-- <script src="/app.js"></script> -->
