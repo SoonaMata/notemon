@@ -1,20 +1,28 @@
 .dot {
     height: 155px;
     width: 155px;
-    background-color: transparent;
+    background-color: violet;
     border-radius: 90%;
     border-color: pink;
     border-style:  ridge;
     display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+/*    width: 20%;
+*/}
+.dot:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.containerr {
+    padding: 10px 6px;
 }
 
-#create-button {
+/*#create-button {
     color: pink;
     border-style: solid;
     border-width: 50%;
     border-color: orange;
     position: center;
-}
+}*/
  .navbar .navbar-brand {
     margin: 0;
 }

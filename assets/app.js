@@ -41,6 +41,12 @@
     noteDocument.ready(helpers.loadNotes)
     createButton.click(helpers.createNoteAndRedirect)
 }())
+// var axios = require("axios");
+
+// var apiUrl = " https://www.goodreads.com/book/iliad.json"
+// var queryStr = "?key=fx38lLo5vKung09uEfz6g&format=json&title=iliad"
+// var testURL = "https://www.goodreads.com/book/review_counts.json?key={apikey}&isbns=0596009208,0596517742"
+// axios.get(testURL).then(res => {console.log(res)})
 
 
 
